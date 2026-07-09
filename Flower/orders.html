@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>الطلبات</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="orders.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <div class="logo-circle">🌸</div>
+      <div class="logo-text">
+        <div class="logo-name">Flower</div>
+      </div>
+    </a>
+
+    <!-- Links -->
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li id="orders-link"><a href="orders.html">Orders</a></li>
+    </ul>
+
+    <!-- Login / Signup -->
+    <ul class="top-links">
+      <li id="login-link"><a href="login.html">Login</a></li>
+      <li id="signup-link"><a href="signup.html">Sign Up</a></li>
+    </ul>
+
+    <!-- Burger -->
+    <button class="menu-toggle" id="mobile-menu">&#9776;</button>
+
+  </nav>
+</header>
+
+<!-- Overlay -->
+<div class="menu-overlay" id="menu-overlay"></div>
+ <!-- ================= ABOUT CONTENT ================= -->
+<div class="about-header">
+  <img src="images/tomoko-uji-kxvn1ogpTtE-unsplash.jpg" alt="Flowers">
+</div>
+
+<h2 class="text-center mb-4">اطلب الآن</h2>
+
+<!-- 🔍 SEARCH -->
+<input type="text" id="search" class="form-control mb-4" placeholder="ابحث عن نوع الورد...">
+
+<!-- 📦 PRODUCTS -->
+<div class="row">
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package1.jpg">
+      <h5>Rose Bouquet</h5>
+      <p>$20</p>
+      <button class="btn btn-primary order-btn" data-name="Rose Bouquet" data-price="20">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package3.jpg">
+      <h5>Tulip Flowers</h5>
+      <p>$25</p>
+      <button class="btn btn-primary order-btn" data-name="Tulip Flowers" data-price="25">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package4.jpg">
+      <h5>Mixed Roses</h5>
+      <p>$30</p>
+      <button class="btn btn-primary order-btn" data-name="Mixed Roses" data-price="30">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package3.jpg">
+      <h5>Red Roses</h5>
+      <p>$35</p>
+      <button class="btn btn-primary order-btn" data-name="Red Roses" data-price="35">اطلب</button>
+    </div>
+  </div>
+
+  <!-- الصف الثاني -->
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package5.jpg">
+      <h5>Luxury Flowers</h5>
+      <p>$40</p>
+      <button class="btn btn-primary order-btn" data-name="Luxury Flowers" data-price="40">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package6.jpg">
+      <h5>White Roses</h5>
+      <p>$45</p>
+      <button class="btn btn-primary order-btn" data-name="White Roses" data-price="45">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package7.jpg">
+      <h5>Pink Flowers</h5>
+      <p>$50</p>
+      <button class="btn btn-primary order-btn" data-name="Pink Flowers" data-price="50">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package8.jpg">
+      <h5>Premium Mix</h5>
+      <p>$55</p>
+      <button class="btn btn-primary order-btn" data-name="Premium Mix" data-price="55">اطلب</button>
+    </div>
+  </div>
+
+  <!-- الصف الثالث -->
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package9.jpg">
+      <h5>Spring Flowers</h5>
+      <p>$40</p>
+      <button class="btn btn-primary order-btn" data-name="Spring Flowers" data-price="40">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package9100.jpg">
+      <h5>Special Roses</h5>
+      <p>$45</p>
+      <button class="btn btn-primary order-btn" data-name="Special Roses" data-price="45">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package11.jpg">
+      <h5>Elegant Flowers</h5>
+      <p>$50</p>
+      <button class="btn btn-primary order-btn" data-name="Elegant Flowers" data-price="50">اطلب</button>
+    </div>
+  </div>
+
+  <div class="col-md-3 product">
+    <div class="product-card text-center">
+      <img src="images/package12.jpg">
+      <h5>Luxury Package</h5>
+      <p>$55</p>
+      <button class="btn btn-primary order-btn" data-name="Luxury Package" data-price="55">اطلب</button>
+    </div>
+  </div>
+
+</div>
+<!-- 🛒 MODAL -->
+<div class="modal fade" id="orderModal">
+  <div class="modal-dialog">
+    <div class="modal-content p-3">
+
+      <h4>تأكيد الطلب</h4>
+
+      <p id="productName"></p>
+      <p id="productPrice"></p>
+      <p id="userName"></p>
+
+      <select id="payment" class="form-control mb-3">
+        <option value="">اختر طريقة الدفع</option>
+        <option>دفع إلكتروني</option>
+        <option>عند التوصيل</option>
+      </select>
+
+      <button class="btn btn-success" id="confirmOrder">تأكيد الطلب</button>
+
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const menuToggle = document.getElementById("mobile-menu");
+const navLinks = document.getElementById("nav-links");
+const overlay = document.getElementById("menu-overlay");
+
+// فتح المنيو
+function openMenu() {
+  navLinks.classList.add("active");
+  overlay.classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+// إغلاق المنيو
+function closeMenu() {
+  navLinks.classList.remove("active");
+  overlay.classList.remove("active");
+  document.body.style.overflow = "";
+}
+
+menuToggle.addEventListener("click", openMenu);
+overlay.addEventListener("click", closeMenu);
+
+// إغلاق عند الضغط خارج المنيو (أقوى حل)
+document.addEventListener("click", function (e) {
+  const isMenu = navLinks.contains(e.target);
+  const isButton = menuToggle.contains(e.target);
+
+  if (!isMenu && !isButton) {
+    closeMenu();
+  }
+});
+
+// 🔍 SEARCH
+const search = document.getElementById("search");
+const products = document.querySelectorAll(".product");
+
+search.addEventListener("keyup", function () {
+  const value = this.value.toLowerCase();
+
+  products.forEach(product => {
+    product.style.display = product.textContent.toLowerCase().includes(value)
+      ? "block"
+      : "none";
+  });
+});
+
+// 🛒 ORDER
+const buttons = document.querySelectorAll(".order-btn");
+const modal = new bootstrap.Modal(document.getElementById('orderModal'));
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", function () {
+
+    document.getElementById("productName").innerText = "المنتج: " + this.dataset.name;
+    document.getElementById("productPrice").innerText = "السعر: $" + this.dataset.price;
+
+    const userData = JSON.parse(localStorage.getItem("currentUser"));
+    let currentUser = userData?.name || "زائر";
+
+    document.getElementById("userName").innerText = "العميل: " + currentUser;
+
+    modal.show();
+  });
+});
+
+// ✅ تأكيد الطلب
+document.getElementById("confirmOrder").addEventListener("click", function () {
+
+  const payment = document.getElementById("payment").value;
+
+  if(payment === ""){
+    alert("اختار طريقة الدفع!");
+    return;
+  }
+
+  alert("تم الطلب بنجاح \nطريقة الدفع: " + payment);
+});
+</script>
+
+</body>
+</html>
